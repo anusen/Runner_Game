@@ -86,6 +86,7 @@ GameObject:
   - 135: {fileID: 329626658}
   - 23: {fileID: 329626657}
   - 143: {fileID: 329626656}
+  - 114: {fileID: 329626661}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Player
@@ -158,6 +159,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &329626661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 329626655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c15096688097b145afcab235dd9f041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: -1, y: 0, z: 0}
+  speed: 5
 --- !u!1 &1040613328
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,6 +637,7 @@ GameObject:
   - 92: {fileID: 1936697165}
   - 124: {fileID: 1936697164}
   - 81: {fileID: 1936697163}
+  - 114: {fileID: 1936697168}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -689,9 +704,22 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1936697162}
-  m_LocalRotation: {x: .382683486, y: .923879564, z: -1.67276273e-08, w: -4.03840588e-08}
-  m_LocalPosition: {x: 5, y: 5, z: 0}
+  m_LocalRotation: {x: .270598084, y: -.65328151, z: .270598084, w: .65328151}
+  m_LocalPosition: {x: 5, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1936697168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1936697162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fedbd262f4b76ec46a932badc15524ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 329626655}
+  distance: {x: 5, y: 5, z: 0}
