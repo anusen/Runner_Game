@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-// This script looks the camera to a fixed position, looking at the target.
+// This script locks the camera to a fixed position, looking at the target.
 // The position is depending on the targets location.
 // Vector3 distance sets the distance between camera and target.
 
