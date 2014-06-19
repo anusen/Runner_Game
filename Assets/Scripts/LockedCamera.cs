@@ -5,7 +5,7 @@ using System.Collections;
 // The position is depending on the targets location.
 // Vector3 distance sets the distance between camera and target.
 
-public class LookedCamera : MonoBehaviour {
+public class LockedCamera : MonoBehaviour {
 
 	public GameObject target;							
 	public Vector3 distance =
