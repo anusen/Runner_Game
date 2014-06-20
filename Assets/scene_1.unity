@@ -89,8 +89,9 @@ GameObject:
   - 114: {fileID: 329626661}
   - 114: {fileID: 329626663}
   - 114: {fileID: 329626662}
+  - 114: {fileID: 329626664}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -160,7 +161,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!114 &329626661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: -1, y: 0, z: 0}
-  speed: 5
+  speed: 200
 --- !u!114 &329626662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,6 +198,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadHeigth: -2
+--- !u!114 &329626664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 329626655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8dd5a3fac2a4c84a9b206622378c50d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpPower: 5
+  jumpTime: .5
+  barDistance: 3
+  jumpAllowed: 1
 --- !u!1 &742739313
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,7 +222,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 742739314}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Respawn
   m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -559,10 +575,10 @@ Transform:
   m_GameObject: {fileID: 1593488616}
   m_LocalRotation: {x: .598478854, y: -.52275157, z: .166500986, w: .583807647}
   m_LocalPosition: {x: 6.82253981, y: 6.79186153, z: -4.16473675}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: .99999994, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
 --- !u!1 &1730563883
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,7 +589,7 @@ GameObject:
   - 4: {fileID: 1730563884}
   - 65: {fileID: 1730563885}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Stage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -595,7 +611,7 @@ Transform:
   - {fileID: 1503468189}
   - {fileID: 1040613332}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!65 &1730563885
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -11,15 +11,20 @@ public class ForwardMoving : MonoBehaviour {
 	public Vector3 direction =				
 		new Vector3(-1,0,0);
 	public float speed = 5.0f;
-	
-	// Update is called once per frame
+
+	private CharacterController controller;
+
+	void Awake () {
+		controller = 
+			GetComponent<CharacterController>(); 		// gets the CharacterController for the player	
+	}
+
 	void Update () {
-		CharacterController controller = 				// gets the CharacterController for the player	
-			GetComponent<CharacterController>();
 		Vector3 movement = direction;					// gets the direction to move
 		movement.Normalize ();							// normalizes the direction to use only the 
 														// speed variable as speed factor
 		movement *= speed;								// multiplicats the speed to the direction
-		controller.SimpleMove (movement); 				// moves the player
+		controller.SimpleMove 
+			(movement * Time.deltaTime); 				// moves the player
 	}
 }
