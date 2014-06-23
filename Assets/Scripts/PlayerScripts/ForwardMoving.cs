@@ -26,5 +26,6 @@ public class ForwardMoving : MonoBehaviour {
 		movement *= speed;								// multiplicats the speed to the direction
 		controller.SimpleMove 
 			(movement * Time.deltaTime); 				// moves the player
+		Statistics.addWalkedMeters (movement.x);
 	}
 }
