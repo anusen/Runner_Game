@@ -19,13 +19,13 @@ public class Difficulty : MonoBehaviour {
 
 	// Returns a distance to set the beging of a new bar behind an old bar.
 	// The distance is computed stochasticly between two interval boundaries.
-	float GetBarDistance () {
+	public static float GetBarDistance () {
 		return 0.0f;
 	}
 
 	// Returns a length for a new bar.
 	// The length is computed stochasticly between two interval boundaries.
-	float GetBarLength () {
+	public static float GetBarLength () {
 		return 0.0f;
 	}
 }
