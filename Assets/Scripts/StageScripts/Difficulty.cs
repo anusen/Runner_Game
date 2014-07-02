@@ -9,7 +9,6 @@ public class Difficulty : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
 	}
 	
 	// Update is called once per frame
@@ -20,12 +19,12 @@ public class Difficulty : MonoBehaviour {
 	// Returns a distance to set the beging of a new bar behind an old bar.
 	// The distance is computed stochasticly between two interval boundaries.
 	public static float GetBarDistance () {
-		return 0.0f;
+		return Random.value * 10;
 	}
 
 	// Returns a length for a new bar.
 	// The length is computed stochasticly between two interval boundaries.
 	public static float GetBarLength () {
-		return 0.0f;
+		return Random.value * 20;
 	}
 }
